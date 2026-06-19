@@ -1,0 +1,21 @@
+# build / ROS
+build/
+install/
+log/
+**/__pycache__/
+*.pyc
+.venv/
+venv/
+
+# outputs and large artifacts (delivered separately)
+deliverables/
+temp_eval_output/
+*.pcd
+*.tum
+*.tar.xz
+*.tar.gz
+
+# images: ignore by default, but keep documentation images
+*.png
+!docs/img/
+!docs/img/*.png

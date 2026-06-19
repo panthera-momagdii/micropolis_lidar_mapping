@@ -1,0 +1,9 @@
+services:
+  mapper:
+    build: .
+    image: micropolis-mapper:latest
+    volumes:
+      - ${BAGS_HOST:?set BAGS_HOST to ONE session's bag folder}:/bags:ro   # host bags (read-only)
+      - ${OUT_HOST:?set OUT_HOST to an output folder}:/out                 # results back to host
+    # environment:
+    #   - OMP_NUM_THREADS=8   # optional: cap threads (default = all cores)

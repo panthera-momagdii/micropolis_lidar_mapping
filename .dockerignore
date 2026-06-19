@@ -1,0 +1,9 @@
+.git/
+**/build/
+**/install/
+**/log/
+**/__pycache__/
+**/*.mcap
+**/*.pcd
+**/*.tum
+**/*.png

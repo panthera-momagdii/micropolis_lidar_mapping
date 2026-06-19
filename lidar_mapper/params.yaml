@@ -1,0 +1,10 @@
+v_map: 0.5
+v_out: 0.2
+max_corr_dist: 2.0
+huber_delta: 0.5
+max_points_per_voxel: 50
+min_voxel_points: 6
+min_planarity: 0.1
+crop_radius: 100.0
+gap_reset_sec: 5.0
+t0_mode: identity  # identity | gt_anchor

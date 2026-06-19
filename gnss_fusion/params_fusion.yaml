@@ -1,0 +1,8 @@
+gnss_topic: /fixposition/odometry_enu
+w_trans: 100.0      # Omega_odom translation info (1/m^2): odometry is locally accurate, trust the shape
+w_rot: 20000.0      # Omega_odom rotation info (1/rad^2): keep relative attitude stiff to odometry
+                    # (LiDAR-odom rotation is locally precise; this holds attitude while GNSS fixes position)
+gnss_sigma: 0.05    # RTK-fixed ENU position noise (m) -> Omega_gnss = 1/sigma^2
+gnss_every_n: 1     # use every Nth node's GNSS prior (1 = one prior per node)
+gap_reset_sec: 5.0  # node-time gap above this breaks the sequential edges -> new sub-chain
+max_iters: 20
