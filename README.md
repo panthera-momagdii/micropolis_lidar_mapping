@@ -166,7 +166,7 @@ Each run writes `metrics.json` and plots into the given output directory.
 
 The map (`.pcd`) and trajectory (`.tum`) are written to the output directory you pass to the tools (or the host directory mounted at `/out` under Docker) — nothing is written back into the repository. Because the `.pcd` maps exceed GitHub's 100 MB per-file limit, the generated maps and trajectories are delivered out-of-band (via Google Drive) rather than committed here. One output folder corresponds to one session.
 
-Link to Google Drive data: https://drive.google.com/drive/folders/1Z-pRdAbrVFFJWEKkTMucjJfvgMucTRIo
+[Link to Google Drive data](https://drive.google.com/drive/folders/1Z-pRdAbrVFFJWEKkTMucjJfvgMucTRIo) 
 
 ## Documentation
 
